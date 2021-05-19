@@ -17,7 +17,7 @@ const config = {
   supported_resolutions: supportedResolutions,
 };
 
-export default {
+const index = {
   onReady: (cb) => {
     console.log('=====onReady running');
     setTimeout(() => cb(config), 0);
@@ -136,3 +136,5 @@ export default {
     console.log('=====getServerTime running');
   },
 };
+
+export default index;

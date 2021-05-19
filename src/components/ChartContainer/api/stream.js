@@ -7,7 +7,7 @@ var socket = io(socket_url);
 // keep track of subscriptions
 var _subs = [];
 
-export default {
+const stream = {
   subscribeBars: function (symbolInfo, resolution, updateCb, uid, resetCache) {
     const channelString = createChannelString(symbolInfo);
     socket.emit('SubAdd', { subs: [channelString] });
@@ -132,3 +132,5 @@ function createChannelString(symbolInfo) {
   // subscribe to the CryptoCompare trade channel for the pair and exchange
   return `0~${exchange}~${from}~${to}`;
 }
+
+export default stream;

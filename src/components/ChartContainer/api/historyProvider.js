@@ -3,7 +3,7 @@ let rp = require('request-promise').defaults({ json: true });
 const api_root = 'https://min-api.cryptocompare.com';
 const history = {};
 
-export default {
+const historyProvider = {
   history: history,
 
   getBars: function (symbolInfo, resolution, from, to, first, limit) {
@@ -60,3 +60,5 @@ export default {
     });
   },
 };
+
+export default historyProvider;
