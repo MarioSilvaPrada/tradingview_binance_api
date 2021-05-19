@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IoIosMenu } from 'react-icons/io';
+import { IoIosMenu, IoIosClose } from 'react-icons/io';
 
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.yellow};
@@ -15,5 +15,5 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
 `;
