@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IoIosMenu, IoIosClose } from 'react-icons/io';
+import { IoIosMenu } from 'react-icons/io';
 
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.yellow};
