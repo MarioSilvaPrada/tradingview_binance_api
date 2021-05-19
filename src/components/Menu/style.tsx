@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 type Props = {
-  isVisible?: boolean;
+  isVisible: boolean;
 };
 
 export const Container = styled.div<Props>`
@@ -35,4 +35,5 @@ export const OptionsWrapper = styled.div`
   width: 50rem;
   display: flex;
   justify-content: space-between;
+  padding: 0 2rem;
 `;
