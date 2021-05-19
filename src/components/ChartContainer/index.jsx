@@ -29,7 +29,6 @@ class TVChartContainer extends React.PureComponent {
   tvWidget = null;
 
   componentDidMount() {
-    console.log(window);
     const widgetOptions = {
       debug: false,
       symbol: this.props.symbol,
