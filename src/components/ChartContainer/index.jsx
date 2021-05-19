@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Datafeed from './api/';
 
+import * as S from './style';
+
 import { widget } from '../../charting_library/charting_library';
 
 function getLanguageFromURL() {
@@ -87,7 +89,11 @@ class TVChartContainer extends React.PureComponent {
   }
 
   render() {
-    return <div id='tv_chart_container' style={{ height: '80vh' }} />;
+    return (
+      <S.StyledWrapper>
+        <S.Chart id='tv_chart_container' />
+      </S.StyledWrapper>
+    );
   }
 }
 
