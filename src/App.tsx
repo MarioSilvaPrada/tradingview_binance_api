@@ -3,6 +3,7 @@ import React, { useState, FC } from 'react';
 import * as S from './App.styled';
 import ChartContainer from './components/ChartContainer';
 import Menu from './components/Menu';
+import Header from './components/Header';
 
 const App: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,10 +11,7 @@ const App: FC = () => {
     <>
       <Menu isVisible={isMenuOpen} />
       <S.Container isOpen={isMenuOpen}>
-        <S.Header>
-          <S.Menu size={40} onClick={() => setIsMenuOpen(!isMenuOpen)} />
-          <S.Title>BinanceAPI</S.Title>
-        </S.Header>
+        <Header setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
         <ChartContainer />
       </S.Container>
     </>
